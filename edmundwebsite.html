@@ -1,391 +1,117 @@
 <!DOCTYPE html>
-<html lang="en-US">
-	<head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta charset="utf-8" />
-		<title>
-		</title>
-		<style>
-			body { font-family:Calibri; font-size:12pt }
-			p { margin:0pt }
-@media (max-width: 900px) { 
-img { 
-   max-width: 100%;
-   height: auto;
-}
-
-.table-container {
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-td, th {
-    padding: 8px;
-    text-align: left;
-    border: 1px solid #ddd;
-}
-}	
-
-
-		</style>
-	</head>
-	<body>
-			<p style="widows:0; orphans:0">
-				<span style="font-family:Helvetica">&lt;!DOCTYPE html&gt;</span>
-			</p>
-			<p style="widows:0; orphans:0">
-				<span style="font-family:Helvetica">&lt;html lang="en"&gt;</span>
-			</p>
-			<p style="widows:0; orphans:0">
-				<span style="font-family:Helvetica">&lt;head&gt;</span>
-			</p>
-			<p style="widows:0; orphans:0">
-				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;meta charset="UTF-8"&gt;</span>
-			</p>
-			<p style="widows:0; orphans:0">
-				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</span>
-			</p>
-			<p style="widows:0; orphans:0">
-				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;title&gt;Edmund Allen&lt;/title&gt;</span>
-			</p>
-			<p style="widows:0; orphans:0">
-				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;style&gt;</span>
-			</p>
-			<p style="widows:0; orphans:0">
-				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">body {</span>
-			</p>
-			<p style="widows:0; orphans:0">
-				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">font-family: Arial, sans-serif;</span>
-			</p>
-			<p style="widows:0; orphans:0">
-				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">background-color: #f4f4f4;</span>
-			</p>
-			<p style="widows:0; orphans:0">
-				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">color: #333;</span>
-			</p>
-			<p style="widows:0; orphans:0">
-				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">margin: 0;</span>
-			</p>
-			<p style="widows:0; orphans:0">
-				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">padding: 0;</span>
-			</p>
-			<p style="widows:0; orphans:0">
-				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">}</span>
-			</p>
-			<p style="widows:0; orphans:0">
-				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">header, footer {</span>
-			</p>
-			<p style="widows:0; orphans:0">
-				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">background-color: #2e3d49;</span>
-			</p>
-			<p style="widows:0; orphans:0">
-				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">color: white;</span>
-			</p>
-			<p style="widows:0; orphans:0">
-				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">text-align: center;</span>
-			</p>
-			<p style="widows:0; orphans:0">
-				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">padding: 1em 0;</span>
-			</p>
-			<p style="widows:0; orphans:0">
-				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">}</span>
-			</p>
-			<p style="widows:0; orphans:0">
-				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">main {</span>
-			</p>
-			<p style="widows:0; orphans:0">
-				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">max-width: 800px;</span>
-			</p>
-			<p style="widows:0; orphans:0">
-				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">margin: 20px auto;</span>
-			</p>
-			<p style="widows:0; orphans:0">
-				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">padding: 20px;</span>
-			</p>
-			<p style="widows:0; orphans:0">
-				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">background-color: #ffffff;</span>
-			</p>
-			<p style="widows:0; orphans:0">
-				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);</span>
-			</p>
-			<p style="widows:0; orphans:0">
-				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">}</span>
-			</p>
-			<p style="widows:0; orphans:0">
-				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">h1, h2, h3 {</span>
-			</p>
-			<p style="widows:0; orphans:0">
-				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">color: #2e3d49;</span>
-			</p>
-			<p style="widows:0; orphans:0">
-				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">}</span>
-			</p>
-			<p style="widows:0; orphans:0">
-				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">section {</span>
-			</p>
-			<p style="widows:0; orphans:0">
-				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">margin-bottom: 40px;</span>
-			</p>
-			<p style="widows:0; orphans:0">
-				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">}</span>
-			</p>
-			<p style="widows:0; orphans:0">
-				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">.photo-gallery {</span>
-			</p>
-			<p style="widows:0; orphans:0">
-				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">display: flex;</span>
-			</p>
-			<p style="widows:0; orphans:0">
-				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">flex-wrap: wrap;</span>
-			</p>
-			<p style="widows:0; orphans:0">
-				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">gap: 10px;</span>
-			</p>
-			<p style="widows:0; orphans:0">
-				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">}</span>
-			</p>
-			<p style="widows:0; orphans:0">
-				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">.photo-gallery img {</span>
-			</p>
-			<p style="widows:0; orphans:0">
-				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">width: calc(33% - 10px);</span>
-			</p>
-			<p style="widows:0; orphans:0">
-				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);</span>
-			</p>
-			<p style="widows:0; orphans:0">
-				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">}</span>
-			</p>
-			<p style="widows:0; orphans:0">
-				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">.photo-gallery figcaption {</span>
-			</p>
-			<p style="widows:0; orphans:0">
-				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">text-align: center;</span>
-			</p>
-			<p style="widows:0; orphans:0">
-				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">font-size: 0.9em;</span>
-			</p>
-			<p style="widows:0; orphans:0">
-				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">color: #555;</span>
-			</p>
-			<p style="widows:0; orphans:0">
-				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">}</span>
-			</p>
-			<p style="widows:0; orphans:0">
-				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">.contact-form input, .contact-form textarea {</span>
-			</p>
-			<p style="widows:0; orphans:0">
-				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">width: 100%;</span>
-			</p>
-			<p style="widows:0; orphans:0">
-				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">padding: 10px;</span>
-			</p>
-			<p style="widows:0; orphans:0">
-				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">margin: 5px 0;</span>
-			</p>
-			<p style="widows:0; orphans:0">
-				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">border: 1px solid #ccc;</span>
-			</p>
-			<p style="widows:0; orphans:0">
-				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">border-radius: 5px;</span>
-			</p>
-			<p style="widows:0; orphans:0">
-				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">}</span>
-			</p>
-			<p style="widows:0; orphans:0">
-				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">.contact-form button {</span>
-			</p>
-			<p style="widows:0; orphans:0">
-				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">background-color: #2e3d49;</span>
-			</p>
-			<p style="widows:0; orphans:0">
-				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">color: white;</span>
-			</p>
-			<p style="widows:0; orphans:0">
-				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">padding: 10px 15px;</span>
-			</p>
-			<p style="widows:0; orphans:0">
-				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">border: none;</span>
-			</p>
-			<p style="widows:0; orphans:0">
-				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">border-radius: 5px;</span>
-			</p>
-			<p style="widows:0; orphans:0">
-				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">cursor: pointer;</span>
-			</p>
-			<p style="widows:0; orphans:0">
-				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">}</span>
-			</p>
-			<p style="widows:0; orphans:0">
-				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;/style&gt;</span>
-			</p>
-			<p style="widows:0; orphans:0">
-				<span style="font-family:Helvetica">&lt;/head&gt;</span>
-			</p>
-			<p style="widows:0; orphans:0">
-				<span style="font-family:Helvetica">&lt;body&gt;</span>
-			</p>
-			<p style="widows:0; orphans:0">
-				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;header&gt;</span>
-			</p>
-			<p style="widows:0; orphans:0">
-				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;h1&gt;Edmund Allen&lt;/h1&gt;</span>
-			</p>
-			<p style="widows:0; orphans:0">
-				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;/header&gt;</span>
-			</p>
-			<p style="widows:0; orphans:0">
-				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;main&gt;</span>
-			</p>
-			<p style="widows:0; orphans:0">
-				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;section id="about"&gt;</span>
-			</p>
-			<p style="widows:0; orphans:0">
-				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;h2&gt;About Me&lt;/h2&gt;</span>
-			</p>
-			<p style="widows:0; orphans:0">
-				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;p&gt;</span>
-			</p>
-			<p style="widows:0; orphans:0">
-				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">My name is Edmund Allen. I hold a B.S. in Computer Science and Engineering from Santa Clara University.</span>
-			</p>
-			<p style="widows:0; orphans:0">
-				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">I am a former classical music professional and an aspiring sales or solutions engineer. </span>
-			</p>
-			<p style="widows:0; orphans:0">
-				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">I have a passion for creation and innovation that makes a tangible impact, directly bettering lives. </span>
-			</p>
-			<p style="widows:0; orphans:0">
-				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">I love talking to the many diverse and interesting people of this wide, beautiful world.</span>
-			</p>
-			<p style="widows:0; orphans:0">
-				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;/p&gt;</span>
-			</p>
-			<p style="widows:0; orphans:0">
-				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;/section&gt;</span>
-			</p>
-			<p style="widows:0; orphans:0">
-				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;section id="projects"&gt;</span>
-			</p>
-			<p style="widows:0; orphans:0">
-				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;h2&gt;Projects&lt;/h2&gt;</span>
-			</p>
-			<p style="widows:0; orphans:0">
-				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;h3&gt;Senior Design Project: LLM Autotuning&lt;/h3&gt;</span>
-			</p>
-			<p style="widows:0; orphans:0">
-				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;p&gt;Details about the LLM autotuning project published under Santa Clara University.&lt;/p&gt;</span>
-			</p>
-			<p style="widows:0; orphans:0">
-				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;h3&gt;Handipark, INRIX Hack 2022&lt;/h3&gt;</span>
-			</p>
-			<p style="widows:0; orphans:0">
-				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;p&gt;Details about the Handipark project from the INRIX Hack 2022.&lt;/p&gt;</span>
-			</p>
-			<p style="widows:0; orphans:0">
-				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;/section&gt;</span>
-			</p>
-			<p style="widows:0; orphans:0">
-				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;section id="contact"&gt;</span>
-			</p>
-			<p style="widows:0; orphans:0">
-				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;h2&gt;Contact&lt;/h2&gt;</span>
-			</p>
-			<p style="widows:0; orphans:0">
-				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;form class="contact-form"&gt;</span>
-			</p>
-			<p style="widows:0; orphans:0">
-				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;input type="text" name="name" placeholder="Your Name" required&gt;</span>
-			</p>
-			<p style="widows:0; orphans:0">
-				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;input type="email" name="email" placeholder="Your Email" required&gt;</span>
-			</p>
-			<p style="widows:0; orphans:0">
-				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;textarea name="message" placeholder="Your Message" rows="5" required&gt;&lt;/textarea&gt;</span>
-			</p>
-			<p style="widows:0; orphans:0">
-				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;button type="submit"&gt;Send&lt;/button&gt;</span>
-			</p>
-			<p style="widows:0; orphans:0">
-				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;/form&gt;</span>
-			</p>
-			<p style="widows:0; orphans:0">
-				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;/section&gt;</span>
-			</p>
-			<p style="widows:0; orphans:0">
-				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;section id="gallery"&gt;</span>
-			</p>
-			<p style="widows:0; orphans:0">
-				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;h2&gt;Photo Gallery&lt;/h2&gt;</span>
-			</p>
-			<p style="widows:0; orphans:0">
-				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;div class="photo-gallery"&gt;</span>
-			</p>
-			<p style="widows:0; orphans:0">
-				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;figure&gt;</span>
-			</p>
-			<p style="widows:0; orphans:0">
-				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;img src="photo1.jpg" alt="Photo 1"&gt;</span>
-			</p>
-			<p style="widows:0; orphans:0">
-				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;figcaption&gt;Caption for Photo 1&lt;/figcaption&gt;</span>
-			</p>
-			<p style="widows:0; orphans:0">
-				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;/figure&gt;</span>
-			</p>
-			<p style="widows:0; orphans:0">
-				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;figure&gt;</span>
-			</p>
-			<p style="widows:0; orphans:0">
-				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;img src="photo2.jpg" alt="Photo 2"&gt;</span>
-			</p>
-			<p style="widows:0; orphans:0">
-				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;figcaption&gt;Caption for Photo 2&lt;/figcaption&gt;</span>
-			</p>
-			<p style="widows:0; orphans:0">
-				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;/figure&gt;</span>
-			</p>
-			<p style="widows:0; orphans:0">
-				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;figure&gt;</span>
-			</p>
-			<p style="widows:0; orphans:0">
-				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;img src="photo3.jpg" alt="Photo 3"&gt;</span>
-			</p>
-			<p style="widows:0; orphans:0">
-				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;figcaption&gt;Caption for Photo 3&lt;/figcaption&gt;</span>
-			</p>
-			<p style="widows:0; orphans:0">
-				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;/figure&gt;</span>
-			</p>
-			<p style="widows:0; orphans:0">
-				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;/div&gt;</span>
-			</p>
-			<p style="widows:0; orphans:0">
-				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;/section&gt;</span>
-			</p>
-			<p style="widows:0; orphans:0">
-				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;/main&gt;</span>
-			</p>
-			<p style="widows:0; orphans:0">
-				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;footer&gt;</span>
-			</p>
-			<p style="widows:0; orphans:0">
-				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;p&gt;&amp;copy; 2024 Edmund Allen. All rights reserved.&lt;/p&gt;</span>
-			</p>
-			<p style="widows:0; orphans:0">
-				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;/footer&gt;</span>
-			</p>
-			<p style="widows:0; orphans:0">
-				<span style="font-family:Helvetica">&lt;/body&gt;</span>
-			</p>
-			<p style="widows:0; orphans:0">
-				<span style="font-family:Helvetica">&lt;/html&gt;</span>
-			</p>
-	<p style="bottom: 10px; right: 10px; position: absolute;"><a href="https://wordtohtml.net" target="_blank" style="font-size:11px; color: #d0d0d0">Converted to HTML with WordToHTML.net</a></p>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edmund Allen</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header, footer {
+            background-color: #2e3d49;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2, h3 {
+            color: #2e3d49;
+        }
+        section {
+            margin-bottom: 40px;
+        }
+        .photo-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .photo-gallery img {
+            width: calc(33% - 10px);
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+        .photo-gallery figcaption {
+            text-align: center;
+            font-size: 0.9em;
+            color: #555;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .contact-form button {
+            background-color: #2e3d49;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Edmund Allen</h1>
+    </header>
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>
+                My name is Edmund Allen. I hold a B.S. in Computer Science and Engineering from Santa Clara University.
+                I am a former classical music professional and an aspiring sales or solutions engineer. 
+                I have a passion for creation and innovation that makes a tangible impact, directly bettering lives. 
+                I love talking to the many diverse and interesting people of this wide, beautiful world.
+            </p>
+        </section>
+        <section id="projects">
+            <h2>Projects</h2>
+            <h3>Senior Design Project: LLM Autotuning</h3>
+            <p>Details about the LLM autotuning project published under Santa Clara University.</p>
+            <h3>Handipark, INRIX Hack 2022</h3>
+            <p>Details about the Handipark project from the INRIX Hack 2022.</p>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <form class="contact-form">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+        <section id="gallery">
+            <h2>Photo Gallery</h2>
+            <div class="photo-gallery">
+                <figure>
+                    <img src="photo1.jpg" alt="Photo 1">
+                    <figcaption>Caption for Photo 1</figcaption>
+                </figure>
+                <figure>
+                    <img src="photo2.jpg" alt="Photo 2">
+                    <figcaption>Caption for Photo 2</figcaption>
+                </figure>
+                <figure>
+                    <img src="photo3.jpg" alt="Photo 3">
+                    <figcaption>Caption for Photo 3</figcaption>
+                </figure>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Edmund Allen. All rights reserved.</p>
+    </footer>
 </body>
 </html>
