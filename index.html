@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -31,7 +32,7 @@
         section {
             margin-bottom: 40px;
         }
-        .photo-gallery {
+        /* .photo-gallery {
             display: flex;
             flex-wrap: wrap;
             gap: 10px;
@@ -44,6 +45,11 @@
             text-align: center;
             font-size: 0.9em;
             color: #555;
+        } */
+        .contact-form {
+            width: 800px;
+            margin: 0 auto;
+            padding: 20px;
         }
         .contact-form input, .contact-form textarea {
             width: 100%;
@@ -70,10 +76,10 @@
         <section id="about">
             <h2>About Me</h2>
             <p>
-                My name is Edmund Allen. I hold a B.S. in Computer Science and Engineering from Santa Clara University.
-                I am a former classical music professional and an aspiring sales or solutions engineer. 
-                I have a passion for creation and innovation that makes a tangible impact, directly bettering lives. 
-                I love talking to the many diverse and interesting people of this wide, beautiful world.
+                Recent Computer Science and Engineering graduate from Santa Clara University eager to leverage technical expertise and interpersonal skills in 
+                Sales Engineering, Product Management, or Solutions Engineering roles.<br>
+                Passionate about driving impactful solutions that bridge technical and customer needs, 
+                I am actively seeking a position where I can fully leverage my background as a communicator, coordinator, and Computer Science Engineer.
             </p>
         </section>
         <section id="projects">
@@ -82,14 +88,17 @@
             <p>Applied Auto-tuning on LoRA Hyperparameters, Santa Clara University. 
                 Conducted a senior design engineering thesis on optimizing LLM hyperparameters using Bayesian optimization, reducing training times and costs with minimal accuracy loss. 
                 Developed a Python visualization tool with a Pareto front, enabling optimal configuration identification for training time and loss.
+                <br><br>Check out our thesis! https://scholarcommons.scu.edu/cseng_senior/272/
             </p>
+            <h3>Senior Design Thesis</h3>
+            <iframe src="Applied Auto-tuning on LoRA Hyperparameters.pdf" width="100%" height="800px"></iframe>
             <h3>Handipark, INRIX Hack 2022</h3>
             <p>Submission for SCU’s Inrix Hack 2022. 
                 Geared towards giving handicapped drivers an easier time finding handicap-accessible parking near their destination.
                 Assisted in python back-end implementation using information scraping of INRIX’s provided smart travel API’s
                 Implemented flask site to host our custom API to deliver essential information to our front-end iOS implementation of Handipark.
                 Technologies: APIs, Python, Flask
-                Code base: https://devpost.com/software/handipark
+                <br><br>Devpost and code base: https://devpost.com/software/handipark
             </p>
             <h3>NaturalizeMe, SCU Hack for Humanity 2022</h3>
             <p>- Submission for SCU’s Hack for Humanity 2022. 
@@ -97,6 +106,8 @@
                 Developed back-end implementation for site’s eligibility calculation function.
                 Built front-end prototype site using the flask framework and navbar in-site rerouting.
                 Technologies: Python, HTML, CSS, Flask
+
+                <br><br>Code base: https://github.com/matthewgding/H4H2022Submission
             </p>
         </section>
         <section id="contact">
@@ -108,7 +119,7 @@
                 <button type="submit">Send</button>
             </form>
         </section>
-        <section id="gallery">
+        <!-- <section id="gallery">
             <h2>Photo Gallery</h2>
             <div class="photo-gallery">
                 <figure>
@@ -124,7 +135,7 @@
                     <figcaption>Caption for Photo 3</figcaption>
                 </figure>
             </div>
-        </section>
+        </section> -->
     </main>
     <footer>
         <p>&copy; 2024 Edmund Allen. All rights reserved.</p>
